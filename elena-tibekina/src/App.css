@@ -1,0 +1,109 @@
+.logo >img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+.pokemons-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pokemon-card {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+    background-color: rgba(0,128,128, 0.1) !important;
+    box-shadow: 2px 3px rgba(0, 0, 0, .3);
+}
+
+.card-button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card-button > button {
+    width: 10rem;
+}
+
+.pokemon-card__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.card-title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-img > img {
+    width: 15rem;
+    height: auto;
+}
+
+/*.container {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    justify-content: center;*/
+/*}*/
+
+.pokemon-page__card {
+    box-shadow: 3px 5px rgba(0, 0, 0, .2);
+}
+
+.pokemon-page__img {
+    width: 8rem;
+    height: 8rem;
+    /*align-self: center;*/
+    border: 1px solid rgba(0,128,128, 0.9);
+    border-radius: 50%;
+    background-color: rgba(0,128,128, 0.9);
+    margin-right: 2rem;
+}
+
+.pokemon-page__card-text {
+    width: 60%;
+}
+
+.pokemon-page__card-text > p {
+    border-bottom: 1px solid rgba(0,128,128, 0.9);
+}
+
+.pokemon-page__content {
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    background-color: rgba(0,128,128, 0.1);
+    font-size: 2rem;
+}
+
+.pokemon-page__content > p {
+    border-radius: 15px;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 640px) {
+    .pokemons-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pokemon-card {
+        width: 90%;
+    }
+
+    .pokemon-page__content {
+        font-size: 1.3rem;
+    }
+}
